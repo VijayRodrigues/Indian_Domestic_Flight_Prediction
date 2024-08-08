@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        select, input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .result h2 {
+            margin: 0;
+            color: #333;
+        }
+        .result p {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Indian Domestic Flight Price Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="airline">Airline</label>
+            <select id="airline" name="airline">
+                <!-- Options will be populated dynamically by Flask -->
+                {% for airline in airlines %}
+                    <option value="{{ airline }}">{{ airline }}</option>
+                {% endfor %}
+            </select>
+            
+            <label for="date_of_journey">Date of Journey</label>
+            <input type="date" id="date_of_journey" name="date_of_journey" required>
+            
+            <label for="source">Source</label>
+            <select id="source" name="source">
+                <!-- Options will be populated dynamically by Flask -->
+                {% for source in sources %}
+                    <option value="{{ source }}">{{ source }}</option>
+                {% endfor %}
+            </select>
+            
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination">
+                <!-- Options will be populated dynamically by Flask -->
+                {% for destination in destinations %}
+                    <option value="{{ destination }}">{{ destination }}</option>
+                {% endfor %}
+            </select>
+            
+            <label for="route">Route</label>
+            <select id="route" name="route">
+                <!-- Options will be populated dynamically by Flask -->
+                {% for route in routes %}
+                    <option value="{{ route }}">{{ route }}</option>
+                {% endfor %}
+            </select>
+            
+            
+            <label for="total_stops">Total Stops</label>
+            <select id="total_stops" name="total_stops">
+                <!-- Options will be populated dynamically by Flask -->
+                {% for stop in total_stops %}
+                    <option value="{{ stop }}">{{ stop }}</option>
+                {% endfor %}
+            </select>
+            
+            <label for="additional_info">Additional Info</label>
+            <select id="additional_info" name="additional_info">
+                <!-- Options will be populated dynamically by Flask -->
+                {% for info in additional_info %}
+                    <option value="{{ info }}">{{ info }}</option>
+                {% endfor %}
+            </select>
+            
+            <button type="submit">Predict Price</button>
+        </form>
+        
+        {% if price is not none %}
+            <div class="result">
+                <h2>Predicted Price</h2>
+                <p>Rs. {{ price }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
