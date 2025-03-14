@@ -21,7 +21,7 @@
 
 ![image](https://github.com/user-attachments/assets/70cf29b8-bf77-4b72-a48f-39f4a9cde9ec)
 
-
+---
 
 ## 🚀 Features  
 
@@ -32,7 +32,7 @@
 ✅ **Data Preprocessing:** Converts categorical data using `LabelEncoder`  
 ✅ **Trained Model Stored:** Model saved as `Flight_Price_Prediction.pkl`  
 
-
+---
 
 ## 📜 Technologies Used
 
@@ -42,6 +42,7 @@
 - **Pandas & NumPy**
 - **HTML, CSS (For UI)**
 
+---
 
 ## 🎯 How It Works
 - **User Input:** The user provides flight details like **Airline, Source, Destination, Route, Stops, Date of Journey, Additional Info** via the web app.
@@ -55,13 +56,15 @@
 - 🔹 The predicted price is displayed on the web interface.
 
 
-
+---
 
 ## 🚀 Future Enhancements
 - 🔹 Improve model accuracy using advanced ML techniques.
 - 🔹 Deploy on cloud services like AWS/GCP/Azure.
 - 🔹 Integrate live airline price APIs for better comparison.
 
+
+---
 
 Live Demo:
 A live demo of the application is available at https://vrflightpred.pythonanywhere.com
