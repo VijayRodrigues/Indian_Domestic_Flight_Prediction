@@ -44,23 +44,23 @@
 
 
 ## 🎯 How It Works
-**User Input:** The user provides flight details like **Airline, Source, Destination, Route, Stops, Date of Journey, Additional Info** via the web app.
-**Data Preprocessing:**
-🔹 Date is converted into a suitable format.
-🔹 Categorical features are transformed using LabelEncoder.
-**Prediction:**
-🔹 The trained HistGradientBoostingRegressor model predicts the ticket price.
-🔹 The model processes input features and outputs an estimated price.
-**Result Display:**
-🔹 The predicted price is displayed on the web interface.
+- **User Input:** The user provides flight details like **Airline, Source, Destination, Route, Stops, Date of Journey, Additional Info** via the web app.
+- **Data Preprocessing:**
+- 🔹 Date is converted into a suitable format.
+- 🔹 Categorical features are transformed using LabelEncoder.
+- **Prediction:**
+- 🔹 The trained HistGradientBoostingRegressor model predicts the ticket price.
+- 🔹 The model processes input features and outputs an estimated price.
+- **Result Display:**
+- 🔹 The predicted price is displayed on the web interface.
 
 
 
 
 ## 🚀 Future Enhancements
-🔹 Improve model accuracy using advanced ML techniques.
-🔹 Deploy on cloud services like AWS/GCP/Azure.
-🔹 Integrate live airline price APIs for better comparison.
+- 🔹 Improve model accuracy using advanced ML techniques.
+- 🔹 Deploy on cloud services like AWS/GCP/Azure.
+- 🔹 Integrate live airline price APIs for better comparison.
 
 
 Live Demo:
