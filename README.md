@@ -19,20 +19,7 @@
 
 ## 📂 Project Structure  
 
-📦 flight-price-prediction
-│── 📂 static               # (For CSS, JS, images - if needed in the future)
-│── 📂 templates            # (Contains HTML templates for Flask)
-│   │── index.html          # (Frontend UI)
-│── 📂 models               # (Stores trained models)
-│   │── Flight_Price_Prediction.pkl
-│── 📂 data                 # (Stores dataset)
-│   │── Train_set_flight.csv
-│── app.py                  # (Flask application script)
-│── train_model.py          # (Model training script)
-│── requirements.txt        # (Python dependencies)
-│── README.md               # (Project documentation)
-│── .gitignore              # (Ignore unnecessary files)
-
+![image](https://github.com/user-attachments/assets/70cf29b8-bf77-4b72-a48f-39f4a9cde9ec)
 
 
 
