@@ -34,11 +34,11 @@
 
 
 📜 Technologies Used
-✔️ Python
-✔️ Flask
-✔️ Scikit-Learn
-✔️ Pandas & NumPy
-✔️ HTML, CSS (For UI)
+✔️ **Python**
+✔️ **Flask**
+✔️ **Scikit-Learn**
+✔️ **Pandas & NumPy**
+✔️ **HTML, CSS (For UI)**
 
 
 🎯 How It Works
