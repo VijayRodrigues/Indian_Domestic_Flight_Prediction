@@ -34,7 +34,8 @@
 
 
 
-📜 Technologies Used
+## 📜 Technologies Used
+
 ✔️ **Python**
 ✔️ **Flask**
 ✔️ **Scikit-Learn**
@@ -42,7 +43,7 @@
 ✔️ **HTML, CSS (For UI)**
 
 
-🎯 How It Works
+## 🎯 How It Works
 **User Input:** The user provides flight details like **Airline, Source, Destination, Route, Stops, Date of Journey, Additional Info** via the web app.
 **Data Preprocessing:**
 🔹 Date is converted into a suitable format.
@@ -56,7 +57,7 @@
 
 
 
-🚀 Future Enhancements
+## 🚀 Future Enhancements
 🔹 Improve model accuracy using advanced ML techniques.
 🔹 Deploy on cloud services like AWS/GCP/Azure.
 🔹 Integrate live airline price APIs for better comparison.
